@@ -1,0 +1,55 @@
+mkdir MultiSig_Wallet
+cd MultiSig_Wallet/
+
+npm init
+truffle init
+open folder
+
+truffle compile
+export NODE_OPTIONS=--openssl-legacy-provider
+truffle develop
+migrate
+create the migration file
+migrate
+
+let instance = await Helloworld.deployed()
+instance.hello()
+
+compile
+
+migrate
+
+migrate --reset
+
+instance = await Helloworld.deployed()
+instance.hello()
+instance.setMessage("Hello new message")
+
+
+
+install @openzeppelin/contracts
+npm install @openzeppelin/contracts
+
+
+——————
+
+let wallet = await Wallet.deployed()
+
+let link = await Link.deployed()
+
+link.balanceOf(accounts[0])
+
+wallet.addToken(web3.utils.fromUtf8("LINK"),link.address )
+
+wallet.tokenList(0)
+
+link.approve(wallet.address, 500)
+
+wallet.deposit(100, web3.utils.fromUtf8("LINK"))
+
+——————
+
+npm install truffle-assertions
+
+npm should be run outside of the Node.js REPL, in your normal shell.
+(Press Ctrl+D to exit.)
